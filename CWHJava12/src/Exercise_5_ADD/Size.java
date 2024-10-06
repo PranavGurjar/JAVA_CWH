@@ -1,0 +1,155 @@
+package Com.Harry;
+
+import Com.Harry.Shape;
+
+public class Size extends Shape{
+    int dim1, dim2;
+    Size(int dim1, int dim2){
+        this.dim1 = dim1;
+        this.dim2 = dim2;
+    }
+
+    public int getDim1(){
+        return this.dim1;
+    }
+
+    public int getDim2(){
+        return this.dim2;
+    }
+    
+    public void getDim1(int dim1){
+        this.dim1 = dim1;
+    }
+
+    public void getDim2(int dim2){
+        this.dim2 = dim2;
+    }
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+// package com.PRMSize;
+
+// class Size{
+//     public int dim1, dim2;
+
+//     public Size(int dim1, int dim2){
+//         this.dim1 = dim1;
+//         this.dim2 = dim2;
+//     }
+
+//     public int getDim1(){
+//         return this.dim1;
+//     }
+
+//     public int getDim2(){
+//         return this.dim2;
+//     }
+
+//     public void setDim1(int dim1){
+//         this.dim1 = dim1;
+//     }
+
+//     public void setDim2(int dim2){
+//         this.dim2 = dim2;
+//     }
+// }
+
+// class Square extends Size{
+//     Square(int dim1){
+//         super(dim1, -1); // dim2 not used
+//     }
+
+//     public int area(){
+//         return this.dim1 * this.dim1;
+//     }
+// }
+
+// class Rectangle extends Size{
+//     Rectangle(int dim1, int dim2){
+//         super(dim1, dim2);
+//     }
+
+//     public int area(){
+//         return this.dim1 * this.dim2;
+//     }
+// }
+
+// class Sphere extends Size{
+//     Sphere(int radius){
+//         super(radius, -1); // dim2 not used
+//     }
+
+//     public double area(){
+//         return 4 * Math.PI * this.dim1 * this.dim1;
+//     }
+// }
+
+// class Cylinder extends Size{ // Corrected the typo
+//     Cylinder(int radius, int height){
+//         super(radius, height);
+//     }
+
+//     public double area(){
+//         return 2 * Math.PI * this.dim1 * (this.dim1 + this.dim2); // Surface area formula
+//     }
+// }
+
+// class Circle extends Size{
+//     Circle(int radius){
+//         super(radius, -1); // dim2 not used
+//     }
+
+//     public double area(){
+//         return Math.PI * this.dim1 * this.dim1;
+//     }
+// }
+
+// public class Shape {
+//     public static void main(String[] args) {
+//         Circle cr = new Circle(2);
+//         System.out.println("Circle Area: " + cr.area());
+
+//         Square sq = new Square(4);
+//         System.out.println("Square Area: " + sq.area());
+
+//         Rectangle rect = new Rectangle(2, 5);
+//         System.out.println("Rectangle Area: " + rect.area());
+
+//         Sphere sphere = new Sphere(3);
+//         System.out.println("Sphere Area: " + sphere.area());
+
+//         Cylinder cylinder = new Cylinder(3, 5);
+//         System.out.println("Cylinder Area: " + cylinder.area());
+//     }
+// }
+
+
+
+
+
+
+/*
+OUTPUT:-
+
+
+PS C:\Users\PRANAV\Desktop\Java\Ex5\EXER5> javac -d . Shape.java
+PS C:\Users\PRANAV\Desktop\Java\Ex5\EXER5> java com.PRMSize.Shape
+Circle Area: 12.566370614359172
+Square Area: 16
+Rectangle Area: 10
+Sphere Area: 113.09733552923255
+Cylinder Area: 150.79644737231007
+
+
+
+*/
