@@ -1,0 +1,2 @@
+This is the Java Read Write from file handling 
+Ok Bye
